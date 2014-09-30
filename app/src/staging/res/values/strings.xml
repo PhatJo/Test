@@ -1,0 +1,7 @@
+<resources>
+        <string name="title_activity_environment">EnvironmentActivity</string>
+
+    <string name="hello_world">Staging yo!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
