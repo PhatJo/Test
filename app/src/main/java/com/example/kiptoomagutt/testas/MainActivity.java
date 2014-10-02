@@ -35,13 +35,18 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onButton1Clicked(View view) {
+    public void onButtonTestModuleClicked(View view) {
         Intent intent = new Intent(this, com.example.mymodule.app2.MainActivity.class);
         startActivity(intent);
     }
 
-    public void onButton2Clicked(View view) {
+    public void onButtonEnvironmentClicked(View view) {
         Intent intent = new Intent(this, EnvironmentActivity.class);
+        startActivity(intent);
+    }
+
+    public void onButtonViewPagerClicked(View view) {
+        Intent intent = new Intent(this, ScreenSlidePagerActivity.class);
         startActivity(intent);
     }
 }

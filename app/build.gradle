@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 20
-    buildToolsVersion "20.0.0"
+    buildToolsVersion '20.0.0'
 
     defaultConfig {
         applicationId "com.example.kiptoomagutt.testas"
@@ -37,10 +37,9 @@ android {
 dependencies {
     // Local binary dependency
     compile fileTree(dir: 'libs', include: ['*.jar'])
-
     // Module dependency
-    compile project(":app2")
-
+    compile project(':app2')
     // Remote binary dependency
-    //compile 'com.android.support:appcompat-v7:20'
+    compile 'com.android.support:appcompat-v7:20.0.0'
+    compile 'com.android.support:support-v4:20.0.0'
 }

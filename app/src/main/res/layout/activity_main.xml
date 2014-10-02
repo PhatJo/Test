@@ -15,23 +15,33 @@
         android:id="@+id/textView" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_testmodule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button1"
-        android:onClick="onButton1Clicked"
+        android:text="@string/button_testmodule"
+        android:onClick="onButtonTestModuleClicked"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_environment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button2"
-        android:onClick="onButton2Clicked"
-        android:layout_below="@+id/button1"
+        android:text="@string/button_environment"
+        android:onClick="onButtonEnvironmentClicked"
+        android:layout_below="@+id/button_testmodule"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_viewpager"
+        android:onClick="onButtonViewPagerClicked"
+        android:layout_below="@+id/button_environment"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
