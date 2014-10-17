@@ -49,4 +49,10 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, ScreenSlidePagerActivity.class);
         startActivity(intent);
     }
+
+    public void onButtonTestMemoryClicked(View view) {
+        DumpHandler dumpHandler = new DumpHandler(getApplicationInfo().dataDir, this);
+        dumpHandler.dumpHeap();
+
+    }
 }

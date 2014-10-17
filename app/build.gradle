@@ -32,6 +32,10 @@ android {
             applicationId "com.example.kiptoomagutt.testas.staging"
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
