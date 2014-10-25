@@ -17,7 +17,7 @@ import java.io.IOException;
 /**
  * Created by kiptoo on 10/16/14.
  */
-public class DumpHandler {
+public class DumpHandler implements  Thread.UncaughtExceptionHandler {
     private static final String HPROF_DUMP_BASENAME = "LeakingApp.dalvik-hprof";
     private static final String HOCKEY_APP_ID = "d2f48cca4bbe327f89dc003df2b67ad3";
     private final String dataDir;
@@ -26,6 +26,17 @@ public class DumpHandler {
     public DumpHandler(String dataDir, Context context) {
         this.dataDir = dataDir;
         mContext = context;
+    }
+
+    @Override
+    public void uncaughtException(Thread thread, Throwable ex) {
+
+        try {
+            dumpHeap();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        ex.printStackTrace();
     }
 
     public void dumpHeap() {
