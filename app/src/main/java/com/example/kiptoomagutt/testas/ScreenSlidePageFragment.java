@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
+import android.widget.TextView;
+
 /**
  * A simple {@link Fragment} subclass.
  *
@@ -15,6 +17,7 @@ import android.support.v4.app.Fragment;
 public class ScreenSlidePageFragment extends Fragment {
 
     private static final String TAG = "ScreenSliderPageFragment";
+    public static final String ARG_OBJECT = "object";
 
     public ScreenSlidePageFragment() {
         // Required empty public constructor
@@ -26,6 +29,10 @@ public class ScreenSlidePageFragment extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_screen_slide_page, container, false);
+        Bundle args = getArguments();
+        int pos = args.getInt(ARG_OBJECT);
+        ((TextView) rootView.findViewById(R.id.text1)).setText(
+                Integer.toString(pos));
 
         return rootView;
     }

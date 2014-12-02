@@ -16,9 +16,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Thread.currentThread().setUncaughtExceptionHandler(
+        /*Thread.currentThread().setUncaughtExceptionHandler(
                 new DumpHandler(getApplicationInfo().dataDir, this)
-        );
+        );*/
     }
 
     @Override
