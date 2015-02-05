@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ajp_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="top"
+                android:layout_marginTop="66dp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/loginAuthText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/loginPhoneNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="adjustPan forces the soft keyboard to appear on top of your layout, blocking anything at the bottom. You're going to want to use adjust resize instead, which will move up your EditText and Button, and shrink the ListView. If, in landscape mode, the ListView is shrunk to the point of being unusable/pointless, consider using a fullscreen IME keyboard.adjustPan forces the soft keyboard to appear on top of your layout, blocking anything at the bottom. You're going to want to use adjust resize instead, which will move up your EditText and Button, and shrink the ListView. If, in landscape mode, the ListView is shrunk to the point of being unusable/pointless, consider using a fullscreen IME keyboard.adjustPan forces the soft keyboard to appear on top of your layout, blocking anything at the bottom. You're going to want to use adjust resize instead, which will move up your EditText and Button, and shrink the ListView. If, in landscape mode, the ListView is shrunk to the point of being unusable/pointless, consider using a fullscreen IME keyboard."
+                android:textSize="18sp" >
+            </TextView>
+
+            <include
+                android:id="@+id/login_progress_auth"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/loginPhoneNumber"
+                android:layout_below="@+id/ajp_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dp"
+                layout="@layout/login_progress" />
+
+            <include
+                android:id="@+id/loginPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_above="@+id/loginSendCodeButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                layout="@layout/login_phone_number_layout"/>
+
+            <TextView
+                android:id="@+id/loginSendCodeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/skipAuth"
+                android:layout_marginBottom="70dp"
+                android:text="send code"
+                android:textColor="#333"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/skipAuth"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="login_signup_later"
+                android:textColor="#999"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true" >
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

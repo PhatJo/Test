@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_weight="0.8"
+    android:gravity="center_horizontal" >
+
+    <Spinner
+        android:id="@+id/numberPrefix"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#EEE"
+        android:textColor="#333"
+        android:textColorHint="#333" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/numberPrefix"
+        android:background="#EEE"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="xxx-xxx-xxxx"
+        android:inputType="phone"
+        android:imeOptions="flagNoFullscreen"
+        android:textColor="#333"
+        android:textColorHint="#333" />
+
+</RelativeLayout>

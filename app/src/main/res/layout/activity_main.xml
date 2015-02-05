@@ -55,4 +55,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TestScroll"
+        android:id="@+id/testScrollButton"
+        android:onClick="onButtonTestScrollClicked"
+        android:layout_below="@+id/testMemoryButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

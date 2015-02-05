@@ -10,7 +10,7 @@
       <configuration>
         <option name="SELECTED_BUILD_VARIANT" value="stagingDebug" />
         <option name="ASSEMBLE_TASK_NAME" value="assembleStagingDebug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileStagingDebugJava" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileStagingDebugSources" />
         <option name="ASSEMBLE_TEST_TASK_NAME" value="assembleStagingDebugTest" />
         <option name="SOURCE_GEN_TASK_NAME" value="generateStagingDebugSources" />
         <option name="TEST_SOURCE_GEN_TASK_NAME" value="generateStagingDebugTestSources" />
@@ -31,6 +31,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/staging/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/staging/debug" isTestSource="false" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/staging/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/staging/debug" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/stagingDebug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/stagingDebug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/stagingDebug/assets" type="java-resource" />
@@ -43,6 +44,7 @@
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/test/staging/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/test/staging/debug" isTestSource="true" generated="true" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/test/staging/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/generated/test/staging/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/staging/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/staging/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/staging/assets" type="java-resource" />
@@ -98,6 +100,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/symbols" />
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
+      <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 20 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

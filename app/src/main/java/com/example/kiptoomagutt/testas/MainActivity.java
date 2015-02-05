@@ -63,4 +63,9 @@ public class MainActivity extends Activity {
         Log.d("MainActivity", "will cause crash ere" + a.toLowerCase());
 
     }
+
+    public void onButtonTestScrollClicked(View view) {
+        Intent intent = new Intent(this, ScrollActivity.class);
+        startActivity(intent);
+    }
 }
