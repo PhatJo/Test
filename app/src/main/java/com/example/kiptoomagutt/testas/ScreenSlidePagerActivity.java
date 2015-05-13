@@ -14,6 +14,8 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 
+import com.astuetz.PagerSlidingTabStrip;
+
 public class ScreenSlidePagerActivity extends FragmentActivity {
     private static final String TAG = "ScreenSliderPagerActivity";
     /**
@@ -43,9 +45,12 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
         mPager.setAdapter(mPagerAdapter);
 
         final ActionBar actionBar = getActionBar();
+        // Bind the tabs to the ViewPager
+        PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        tabs.setViewPager(mPager);
 
         // Specify that tabs should be displayed in the action bar.
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        /*actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
         // Create a tab listener that is called when the user changes tabs.
         ActionBar.TabListener tabListener = new ActionBar.TabListener() {
@@ -80,7 +85,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
                         // corresponding tab.
                         getActionBar().setSelectedNavigationItem(position);
                     }
-        });
+        });*/
     }
 
     @Override

@@ -44,5 +44,8 @@ dependencies {
     // Module dependency
     compile project(':app2')
     // Remote binary dependency
-    compile 'com.android.support:support-v13:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }

@@ -1,16 +1,18 @@
 package com.example.kiptoomagutt.testas;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,9 @@ public class MainActivity extends Activity {
         /*Thread.currentThread().setUncaughtExceptionHandler(
                 new DumpHandler(getApplicationInfo().dataDir, this)
         );*/
+        toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
+        setSupportActionBar(toolbar);
+
     }
 
     @Override
