@@ -4,6 +4,7 @@
     <string name="app_name">TestApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_test">Test</string>
     <string name="button_testmodule">Open Test Module</string>
     <string name="button_environment">Go to Environment</string>
     <string name="button_viewpager">Go to ViewPager</string>
