@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -31,6 +32,16 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.my, menu);
         return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem testMenuItem = menu.findItem(R.id.action_test);
+
+        View testView = testMenuItem.getActionView();
+        TextView textView = (TextView) testView.findViewById(R.id.id_action_test_text_view);
+
+        return super.onPrepareOptionsMenu(menu);
     }
 
     @Override
