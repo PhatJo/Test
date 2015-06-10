@@ -28,6 +28,10 @@
             android:name=".ScrollActivity"
             android:label="@string/title_activity_scroll" >
         </activity>
+        <activity
+            android:name=".ToolBarActivity"
+            android:label="@string/title_activity_tool_bar" >
+        </activity>
     </application>
 
 </manifest>

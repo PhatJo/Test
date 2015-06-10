@@ -15,5 +15,6 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.</string>
     <string name="title_activity_scroll">ScrollActivity</string>
+    <string name="title_activity_tool_bar">ToolBarActivity</string>
 
 </resources>

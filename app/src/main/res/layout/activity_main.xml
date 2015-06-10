@@ -77,5 +77,13 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tool Bar"
+            android:id="@+id/toolBarButton"
+            android:onClick="onButtonToolBarClicked"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </LinearLayout>
 </RelativeLayout>

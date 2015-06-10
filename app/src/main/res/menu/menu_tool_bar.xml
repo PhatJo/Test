@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.kiptoomagutt.testas.ToolBarActivity">
+
+    <item android:id="@+id/search_action"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_user"
+        android:orderInCategory="100"
+        app:actionViewClass="android.support.v7.widget.SearchView">
+
+    </item>
+</menu>

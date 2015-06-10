@@ -84,4 +84,9 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this, ScrollActivity.class);
         startActivity(intent);
     }
+
+    public void onButtonToolBarClicked(View view) {
+        Intent intent = new Intent(this, ToolBarActivity.class);
+        startActivity(intent);
+    }
 }
